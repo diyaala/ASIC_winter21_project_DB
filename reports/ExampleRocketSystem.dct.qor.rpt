@@ -1,0 +1,115 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'ExampleRocketSystem' contains 19 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : qor
+Design : ExampleRocketSystem
+Version: Q-2019.12-SP3
+Date   : Tue Feb 22 16:54:59 2022
+****************************************
+
+
+  Timing Path Group 'INPUTS'
+  -----------------------------------
+  Levels of Logic:              35.00
+  Critical Path Length:          3.15
+  Critical Path Slack:           0.08
+  Critical Path Clk Period:      3.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'OUTPUTS'
+  -----------------------------------
+  Levels of Logic:              22.00
+  Critical Path Length:          2.44
+  Critical Path Slack:           0.90
+  Critical Path Clk Period:      3.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clock'
+  -----------------------------------
+  Levels of Logic:              43.00
+  Critical Path Length:          3.23
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      3.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        481
+  Hierarchical Port Count:      69636
+  Leaf Cell Count:             148449
+  Buf/Inv Cell Count:           21160
+  Buf Cell Count:                9516
+  Inv Cell Count:               11644
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:    122553
+  Sequential Cell Count:        25896
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   316530.508309
+  Noncombinational Area:
+                        225036.630863
+  Buf/Inv Area:          50887.253970
+  Total Buffer Area:         33908.40
+  Total Inverter Area:       16978.85
+  Macro/Black Box Area: 990214.207031
+  Net Area:                  0.000000
+  Net XLength        :     3241777.25
+  Net YLength        :     2845892.25
+  -----------------------------------
+  Cell Area:           1531781.346203
+  Design Area:         1531781.346203
+  Net Length        :      6087669.50
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        156557
+  Nets With Violations:           570
+  Max Trans Violations:           308
+  Max Cap Violations:             331
+  -----------------------------------
+
+
+  Hostname: auto.ece.pdx.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   46.59
+  Logic Optimization:                177.90
+  Mapping Optimization:              637.68
+  -----------------------------------------
+  Overall Compile Time:             1487.93
+  Overall Compile Wall Clock Time:   763.15
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
