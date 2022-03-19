@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -group wclk
+        -max_paths 1
+        -capacitance
+Design : fifo1_sram
+Version: Q-2019.12-SP3
+Date   : Fri Mar 18 22:20:43 2022
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: Inactive.
+
+  Startpoint: wptr_full/wbin_reg_0_
+              (rising edge-triggered flip-flop clocked by wclk)
+  Endpoint: wptr_full/wfull_reg
+            (rising edge-triggered flip-flop clocked by wclk)
+  Path Group: wclk
+  Path Type: max
+
+  Point                                          Cap      Incr       Path
+  --------------------------------------------------------------------------
+  clock wclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  wptr_full/wbin_reg_0_/CLK (SDFFARX1_RVT)                0.00       0.10 r
+  wptr_full/wbin_reg_0_/Q (SDFFARX1_RVT)        4.13      0.21       0.31 f
+  wptr_full/U5/Y (AND3X1_RVT)                   3.07      0.09 *     0.40 f
+  wptr_full/U192/Y (NBUFFX8_RVT)               27.09      0.07 *     0.48 f
+  wptr_full/U18/Y (AND3X1_RVT)                  0.60      0.07 *     0.55 f
+  wptr_full/U15/Y (AND2X1_RVT)                  1.80      0.06 *     0.61 f
+  wptr_full/U13/Y (NAND2X4_RVT)                14.22      0.11 *     0.72 r
+  wptr_full/U141/Y (XNOR2X2_RVT)                1.30      0.10 *     0.82 r
+  wptr_full/U107/Y (MUX21X2_RVT)                2.84      0.10 *     0.92 r
+  wptr_full/U106/Y (INVX4_RVT)                  5.32      0.03 *     0.94 f
+  wptr_full/U125/Y (INVX8_RVT)                 13.83      0.03 *     0.97 r
+  wptr_full/U180/Y (XNOR2X2_RVT)                1.56      0.09 *     1.07 r
+  wptr_full/U10/Y (AND2X1_RVT)                  0.57      0.05 *     1.12 r
+  wptr_full/U9/Y (AND4X1_RVT)                   0.95      0.08 *     1.19 r
+  wptr_full/wfull_reg/D (SDFFARX1_RVT)                    0.00 *     1.19 r
+  data arrival time                                                  1.19
+
+  clock wclk (rise edge)                                  1.18       1.18
+  clock network delay (ideal)                             0.10       1.28
+  clock uncertainty                                      -0.07       1.21
+  wptr_full/wfull_reg/CLK (SDFFARX1_RVT)                  0.00       1.21 r
+  library setup time                                     -0.12       1.09
+  data required time                                                 1.09
+  --------------------------------------------------------------------------
+  data required time                                                 1.09
+  data arrival time                                                 -1.19
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.10
+
+
+1

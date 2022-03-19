@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -capacitance
+Design : fifo1_sram
+Version: Q-2019.12-SP3
+Date   : Fri Mar 18 21:25:02 2022
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: Inactive.
+
+  Startpoint: wdata_in[6]
+              (input port clocked by wclk2x)
+  Endpoint: wdata_reg_6_
+            (rising edge-triggered flip-flop clocked by wclk2x)
+  Path Group: INPUTS
+  Path Type: max
+
+  Point                           Cap      Incr       Path
+  -----------------------------------------------------------
+  clock wclk2x (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  input external delay                     0.00       0.10 r
+  wdata_in[6] (in)            2505.91      0.03       0.13 r
+  io_r_wdata_in_6_/DOUT (I1025_NS)
+                                 5.14      0.40 *     0.53 r
+  wdata_reg_6_/D (SDFFARX2_RVT)            0.00 *     0.53 r
+  data arrival time                                   0.53
+
+  clock wclk2x (rise edge)                 0.59       0.59
+  clock network delay (ideal)              0.10       0.69
+  clock uncertainty                       -0.07       0.62
+  wdata_reg_6_/CLK (SDFFARX2_RVT)          0.00       0.62 r
+  library setup time                      -0.17       0.45
+  data required time                                  0.45
+  -----------------------------------------------------------
+  data required time                                  0.45
+  data arrival time                                  -0.53
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.08
+
+
+1
