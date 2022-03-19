@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -capacitance
+Design : ExampleRocketSystem
+Version: Q-2019.12-SP3
+Date   : Sat Mar 19 08:35:38 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p75v125c   Library: saed32lvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: tile/frontend/s1_pc_reg_10_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: tile/frontend/s1_pc_reg_39_
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ExampleRocketSystem
+                     2000000               saed32rvt_ss0p95v125c
+  Frontend           540000                saed32rvt_ss0p95v125c
+  BTB                35000                 saed32rvt_ss0p95v125c
+
+  Point                                          Cap      Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.90       0.90
+  tile/frontend/s1_pc_reg_10_/CLK (SDFFX1_RVT)            0.00 #     0.90 r
+  tile/frontend/s1_pc_reg_10_/Q (SDFFX1_RVT)
+                                                4.53      0.20       1.10 f
+  tile/frontend/btb/io_req_bits_addr[10] (BTB)            0.00       1.10 f
+  tile/frontend/btb/U21/Y (INVX0_RVT)           1.19      0.04       1.15 r
+  tile/frontend/btb/U22/Y (INVX0_RVT)           2.66      0.04       1.19 f
+  tile/frontend/btb/U286/Y (NBUFFX2_RVT)       12.89      0.09       1.28 f
+  tile/frontend/btb/U287/Y (INVX4_RVT)         28.49      0.08       1.36 r
+  tile/frontend/btb/U478/Y (XOR2X1_RVT)         0.58      0.12       1.48 f
+  tile/frontend/btb/U481/Y (NAND4X0_RVT)        0.67      0.05       1.52 r
+  tile/frontend/btb/U482/Y (OR3X1_RVT)          4.31      0.09       1.62 r
+  tile/frontend/btb/U730/Y (INVX2_RVT)         11.61      0.06       1.68 f
+  tile/frontend/btb/U749/Y (AO22X1_RVT)         0.58      0.09       1.76 f
+  tile/frontend/btb/U769/Y (NOR4X1_RVT)         0.59      0.12       1.88 r
+  tile/frontend/btb/U111/Y (NAND4X0_RVT)        0.74      0.06       1.94 f
+  tile/frontend/btb/U17/Y (NBUFFX4_RVT)         3.65      0.07       2.01 f
+  tile/frontend/btb/U18/Y (MUX21X2_RVT)         0.53      0.08       2.09 f
+  tile/frontend/btb/U1069/Y (MUX41X2_RVT)       8.38      0.18       2.27 f
+  tile/frontend/btb/io_resp_valid (BTB)                   0.00       2.27 f
+  tile/frontend/U302/Y (NAND2X0_RVT)            1.83      0.08       2.36 r
+  tile/frontend/U303/Y (AND2X1_RVT)             0.78      0.06       2.41 r
+  tile/frontend/U327/Y (INVX1_RVT)              3.32      0.04       2.45 f
+  tile/frontend/U78/Y (INVX0_RVT)               3.94      0.06       2.51 r
+  tile/frontend/U666/Y (AO22X1_RVT)             0.54      0.07       2.58 r
+  tile/frontend/U668/Y (MUX21X1_RVT)            1.45      0.09       2.67 r
+  tile/frontend/U679/CO (FADDX1_RVT)            1.07      0.09       2.76 r
+  tile/frontend/U158/Y (NOR2X0_RVT)             1.74      0.09       2.85 f
+  tile/frontend/U747/Y (OAI21X1_RVT)            1.11      0.11       2.96 r
+  tile/frontend/U751/Y (AOI21X1_RVT)            1.13      0.09       3.06 f
+  tile/frontend/U161/Y (OAI21X1_RVT)            1.11      0.11       3.17 r
+  tile/frontend/U185/Y (AOI21X1_RVT)            0.94      0.09       3.26 f
+  tile/frontend/U771/Y (OA21X1_RVT)             0.60      0.05       3.31 f
+  tile/frontend/U772/Y (OAI22X1_RVT)            1.45      0.08       3.39 r
+  tile/frontend/U949/CO (FADDX1_RVT)            1.50      0.09       3.48 r
+  tile/frontend/U774/Y (AO22X1_RVT)             1.45      0.07       3.56 r
+  tile/frontend/U936/CO (FADDX1_RVT)            1.50      0.09       3.65 r
+  tile/frontend/U776/Y (AO22X1_RVT)             1.45      0.07       3.72 r
+  tile/frontend/U923/CO (FADDX1_RVT)            1.50      0.09       3.82 r
+  tile/frontend/U778/Y (AO22X1_RVT)             1.97      0.08       3.89 r
+  tile/frontend/U780/Y (AO22X1_RVT)             1.29      0.07       3.96 r
+  tile/frontend/U785/Y (XOR2X2_RVT)             0.55      0.09       4.06 f
+  tile/frontend/U786/Y (NAND2X0_RVT)            0.62      0.04       4.10 r
+  tile/frontend/U789/Y (NAND3X0_RVT)            0.51      0.04       4.14 f
+  tile/frontend/s1_pc_reg_39_/D (SDFFX1_RVT)              0.00       4.14 f
+  data arrival time                                                  4.14
+
+  clock clock (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.90       4.40
+  clock uncertainty                                      -0.16       4.24
+  tile/frontend/s1_pc_reg_39_/CLK (SDFFX1_RVT)            0.00       4.24 r
+  library setup time                                     -0.10       4.14
+  data required time                                                 4.14
+  --------------------------------------------------------------------------
+  data required time                                                 4.14
+  data arrival time                                                 -4.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
